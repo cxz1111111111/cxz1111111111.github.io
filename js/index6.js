@@ -1,0 +1,16 @@
+window.onload=function(){
+	$(".tap1").eq(0).hover(function(){
+		$("li[name='sc']").stop();
+		$("li[name='sc']").slideDown();
+	},function(){
+		$("li[name='sc']").stop();
+		$("li[name='sc']").slideUp();
+	})
+	$(".tap2").eq(0).hover(function(){
+		$("li[name='help']").stop();
+		$("li[name='help']").slideDown();
+	},function(){
+		$("li[name='help']").stop();
+		$("li[name='help']").slideUp();	
+	})
+}
