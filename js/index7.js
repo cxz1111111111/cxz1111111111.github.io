@@ -18,50 +18,8 @@ window.onload=function(){
 		$("li[name='li1']").stop()
 		$("li[name='li1']").slideUp()
 	})
-	var tap1=document.getElementsByClassName("header_bottom_1_1")[0];
-	var tap2=document.getElementsByClassName("header_bottom_1_2")[0];
-	var tap3=document.getElementsByClassName("header_bottom_1_3")[0];
-	var tap4=document.getElementsByClassName("header_bottom_1_4")[0];
-	tap1.onclick=function(){
-		tap1.style.backgroundColor="#ff5367";
-		tap1.style.color="#ffffff";
-		tap2.style.backgroundColor="";
-		tap2.style.color="";
-		tap3.style.backgroundColor="";
-		tap3.style.color="";
-		tap4.style.backgroundColor="";
-		tap4.style.color="";
-	}
-	tap2.onclick=function(){
-		tap2.style.backgroundColor="#ff5367";
-		tap2.style.color="#ffffff";
-		tap3.style.backgroundColor="";
-		tap3.style.color="";
-		tap4.style.backgroundColor="";
-		tap4.style.color="";
-		tap1.style.backgroundColor="";
-		tap1.style.color="";
-	}
-	tap3.onclick=function(){
-		tap3.style.backgroundColor="#ff5367";
-		tap3.style.color="#ffffff";
-		tap1.style.backgroundColor="";
-		tap1.style.color=""
-		tap2.style.backgroundColor="";
-		tap2.style.color=""
-		tap4.style.backgroundColor="";
-		tap4.style.color=""
-	}
-	tap4.onclick=function(){
-		tap4.style.backgroundColor="#ff5367";
-		tap4.style.color="#ffffff";
-		tap1.style.backgroundColor="";
-		tap1.style.color=""
-		tap2.style.backgroundColor="";
-		tap2.style.color=""
-		tap3.style.backgroundColor="";
-		tap3.style.color=""
-	}
+	
+	
 	
    $("a[name='rose1']").click(function(){
 	    // window.localStorage.demo='注册';
@@ -70,4 +28,34 @@ window.onload=function(){
 
 		window.location.href="log.html";
     })
+   setInterval(move,1000)
+   	 var n=0
+   function move(){
+  
+   	n++;
+   	if(n<3){
+   		
+   	var lefts=$(".middle_1topright").width()
+   	$(".middle_1toprightimg").animate({left:-lefts*n})
+   	}
+   	else{
+   		
+   		$(".middle_1toprightimg").animate({left:0})
+   		n=0
+   	}
+   }
+   setInterval(da,1000)
+   function da(){
+   	var pass=new Date(2018,7,14,20,20)-(new Date())
+
+   	var days=parseInt(pass/1000/60/60/24);
+   	var hours=parseInt(pass/1000/60/60%24);
+   	var minutes=parseInt(pass/1000/60%60);
+   	var seconds=parseInt(pass/1000%60);
+   	$("span[name='day']").html(days)
+   	$("span[name='hour']").html(hours)
+   	$("span[name='minutes']").html(minutes)
+   	$("span[name='second']").html(seconds)
+
+	}
 }

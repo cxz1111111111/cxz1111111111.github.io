@@ -74,5 +74,25 @@ window.onload=function(){
 
 
     })
-		
+    $(".wb").eq(0).click(function(){
+    	window.location.href="https://api.weibo.com/oauth2/authorize?scope=all&display=default&redirect_uri=http%3A%2F%2Fwww.meilishuo.com%2Fuser%2Fthirdtransfer%3Fthird%3Dsina%26platform%3Dpc%26operScene%3Dlogin&state=TASuyi29p4rkye3&client_id=463778370&ptp=1.aen5Pb.0.0.PoOZe"
+    })
+     $(".qq").eq(0).click(function(){
+    	window.location.href="https://graph.qq.com/oauth/show?which=Login&display=pc&scope=all&display=pc&response_type=code&redirect_uri=http%3A%2F%2Fwww.meilishuo.com%2Fuser%2Fthirdtransfer%3Fthird%3Dqq%26platform%3Dpc%26operScene%3Dlogin&state=TASz4f0iqvcz7da&client_id=210915&ptp=1.aen5Pb.0.0.1O8li"
+    })
+	$(".wx").eq(0).click(function(){
+    	window.location.href="https://open.weixin.qq.com/connect/qrconnect?appid=wx28b165b5a629bb11&redirect_uri=http%3A%2F%2Fm.meilishuo.com%2Fuser%2Fthirdtransfer%3Fthird%3Dweixin%26platform%3Dpc%26operScene%3Dlogin&response_type=code&scope=snsapi_login&state=TASmirojsmni0m7&ptp=1.aen5Pb.0.0.Hlab0"
+    })
+    $("#jizhu").click(function(){
+    	if(this.checked==true){
+    	$("#put3").eq(0).attr("disabled",false);
+    	$("#put3").eq(0).css("background","#FF5367");
+    	$("#put3").eq(0).css("color","#FFFFFF");
+    	}
+    	else{
+    		$("#put3").eq(0).attr("disabled",true);
+    		$("#put3").eq(0).css("background","#EBEBE4");
+    		$("#put3").eq(0).css("color","#000000");
+    	}
+    })	
 }
