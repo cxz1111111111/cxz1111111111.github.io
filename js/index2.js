@@ -136,4 +136,7 @@ window.onload=function(){
    if(window.localStorage.gg=='立即登录'){
    	$("#input1").val()=window.localStorage.sb
    }
+   $("a[name='gwc']").click(function(){
+   	window.location.href="shoppingcart.html"
+   })
 }

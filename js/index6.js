@@ -13,4 +13,13 @@ window.onload=function(){
 		$("li[name='help']").stop();
 		$("li[name='help']").slideUp();	
 	})
+	$("a[name='gwc']").click(function(){
+		window.location.href="shoppingcart.html"
+	})
+	$(".lastbutton").click(function(){
+		window.location.href="payoff.html"
+	})
+	$("a[name='retur']").click(function(){
+		window.location.href="shoppingcart.html"
+	})
 }

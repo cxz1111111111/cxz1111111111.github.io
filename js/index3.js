@@ -19,6 +19,15 @@ window.onload=function(){
 		quanxuan.onclick=function(){
 			for(var i=0;i<sb.length;i++){
 			sb[i].checked=quanxuan.checked;
+
+		}
+		if($("input[name='sb']").is(":checked")){
+			$("input[name='lastbutton']").attr("disabled",false);
+			$("input[name='lastbutton']").css("background","red");
+	}
+		else{
+			$("input[name='lastbutton']").attr("disabled",true);
+			$("input[name='lastbutton']").css("background","#D8D8D8");
 		}
 		add()
 	}
@@ -26,6 +35,14 @@ window.onload=function(){
 	quanxuan2.onclick=function(){
 		for(var i=0;i<sb.length;i++){
 			sb[i].checked=quanxuan2.checked;
+		}
+		if($("input[name='sb']").is(":checked")){
+			$("input[name='lastbutton']").attr("disabled",false);
+			$("input[name='lastbutton']").css("background","red");
+	}
+		else{
+			$("input[name='lastbutton']").attr("disabled",true);
+			$("input[name='lastbutton']").css("background","#D8D8D8");
 		}
 		add()
 	}
@@ -42,7 +59,14 @@ window.onload=function(){
 		var sum3=Number(sum2);
 		$(this).parent().next().html(sum3*sum1);
 		add()
-		
+		if($("input[name='sb']").is(":checked")){
+			$("input[name='lastbutton']").attr("disabled",false);
+			$("input[name='lastbutton']").css("background","red");
+	}
+		else{
+			$("input[name='lastbutton']").attr("disabled",true);
+			$("input[name='lastbutton']").css("background","#D8D8D8");
+		}
 
 		
 
@@ -61,29 +85,54 @@ window.onload=function(){
 		var sum2=$(this).parent().prev().children().next().html();
 		var sum3=Number(sum2);
 		$(this).parent().next().html(sum3*sum1)
+		if($("input[name='sb']").is(":checked")){
+			$("input[name='lastbutton']").attr("disabled",false);
+			$("input[name='lastbutton']").css("background","red");
+	}
+		else{
+			$("input[name='lastbutton']").attr("disabled",true);
+			$("input[name='lastbutton']").css("background","#D8D8D8");
+		}
 		add() 
 
 	})
 	$("span[name='jieshu']").click(function(){
+		$("input[name='lastbutton']").attr("disabled",true);
+			$("input[name='lastbutton']").css("background","#D8D8D8");
 		$(this).parent().remove()
 		add()
 	})
 	$("input[name='sb']").click(function(){
+
 		add()
+		if($("input[name='sb']").is(":checked")){
+			$("input[name='lastbutton']").attr("disabled",false);
+			$("input[name='lastbutton']").css("background","red");
+	}
+		else{
+			$("input[name='lastbutton']").attr("disabled",true);
+			$("input[name='lastbutton']").css("background","#D8D8D8");
+		}
+	
 	})
 	$("span[name='shangchu']").click(function(){
-		$(this).parent().parent().prev().children().remove()
+		$(this).parent().parent().prev().children().remove();
+		$("input[name='lastbutton']").attr("disabled",true);
+			$("input[name='lastbutton']").css("background","#D8D8D8");
+		add()
 	})
 	function add(){
-		if($("input[name='sb']")[0].checked){
-			$("span[name='sum2']").html($("span[name='xiaoji']").html())
+		for(var i=0,sum=0;i<$("input[name='sb']").length;i++){
+			if($("input[name='sb']")[i].checked){
+				sum+=Number($("span[name='xiaoji']").html());
+			}
 		}
-		else{
-			$("span[name='sum2']").html("¥0.00")
-		}
+		$("span[name='sum2']").html(sum)
+		
+		
 	}
 	$("input[name='lastbutton']").eq(0).click(function(){
-		window.location.href="index6.html"
+		window.location.href="firmorder.html"
 	})
 
 
