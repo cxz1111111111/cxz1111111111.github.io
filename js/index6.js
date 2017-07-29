@@ -22,4 +22,19 @@ window.onload=function(){
 	$("a[name='retur']").click(function(){
 		window.location.href="shoppingcart.html"
 	})
+	var bottom_topbody11=document.getElementsByClassName("bottom_topbody11")[0]
+	$("#res").click(function(){
+		$(".newaddress").toggle(1000)
+	})
+	$("#ret").click(function(){
+		$(".newaddress").hide(1000)
+		var div=document.createElement("div");
+		div.className="bottom_topbody11";
+		
+		div.innerHTML=bottom_topbody11.innerHTML
+
+	
+		$(".news").append(div)
+
+			})
 }

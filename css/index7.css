@@ -3,7 +3,10 @@
 	padding:0;
 }
 a{cursor:pointer;}
-body{height:100%;}
+body{
+	height:100%;
+	font-family:"微软雅黑";
+}
 ul,ol{list-style:none;}
 .header_1 ul li>a{
 	text-decoration:none;

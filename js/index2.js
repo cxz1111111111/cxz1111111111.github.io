@@ -139,4 +139,7 @@ window.onload=function(){
    $("a[name='gwc']").click(function(){
    	window.location.href="shoppingcart.html"
    })
+   $("a[name='gotoin']").click(function(){
+   	window.location.href="list.html"
+   })
 }

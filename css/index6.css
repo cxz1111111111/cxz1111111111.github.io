@@ -141,7 +141,7 @@ a:hover{
 	
 }
 .bottom_topbody1{
-	height:290px;
+
 	width:1150px;
 	border-bottom:1px solid #e1e1e1;
 }
@@ -155,6 +155,9 @@ a:hover{
 	height:156px;
 	background:url(../img/parson.gif) no-repeat;
 	padding-top:20px;
+	float:left;
+
+
 
 }
 .bottom_topbody11 p{
@@ -169,12 +172,7 @@ a:hover{
 .bottom_topbody11 p span{
 	float:left;
 }
-.bottom_topbody11 p input{
 
-	height:12px;
-	width:100px;
-	float:left;
-}
 .bottom_topinput1{
 	margin-left:24px;
 }
@@ -368,4 +366,45 @@ margin-right:10px;
 	background-color:#ffa701;
 	color:#ffffff;
 	border:0;
+}
+.newaddress{
+	width:100%;
+	font-size:12px;
+	display:none;
+
+
+}
+.df{
+	width:100%;
+	height:50px;
+	text-indent:2em;
+
+}
+
+.addname{
+	margin-top:20px;
+	text-indent:2em;
+
+}
+.phone{
+	margin-top:20px;
+	text-indent:2em;
+}
+.addres,.shi{
+	margin-top:20px;
+	text-indent:2em;
+}
+.newaddress button{
+	border:0;
+	background-color:orange;
+	color:#ffffff;
+	width:200px;
+	height:50px;
+	margin-top:20px;
+	margin-left:20px;
+
+}
+.news{
+	width:100%;
+	float:left;
 }

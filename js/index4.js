@@ -70,6 +70,8 @@ window.onload=function(){
 
 		window.location.href="log.html";
     })
-
+	 $("a[name='page']").click(function(){
+	 	window.location.href="index.html";
+	 })
 	
 }
