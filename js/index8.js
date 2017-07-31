@@ -16,6 +16,7 @@ window.onload=function(){
 	 	window.location.href="shoppingcart.html"
 	 })
 	 $("img[name='help']").click(function(){
+	 	$("li[name='help']").stop()
 	 	$("li[name='help']").slideToggle()
 	 })
 	 $("#sea").click(function(){
@@ -95,5 +96,39 @@ window.onload=function(){
 	  		$(this).css("background-color","#ffffff")
 	  		$(this).siblings().css("border","1px solid #ececec")
 	  		$(this).siblings().css("background-color","#f6f6f6")
+	  	})
+	  	$("#ipho").click(function(){
+	  		$(".ewm").stop()
+	  		$(".ewm").slideToggle(1000)
 	  	}) 
+	  	$(".shangping img").click(function(){
+	  			$(".shangping li").stop()
+	  		$(".shangping li").slideToggle(1000)
+	  	})
+	  	$(".waitao img").click(function(){
+	  		$(".waitao li").stop()
+	  		$(".waitao li").slideToggle(1000)
+	  	})
+	  		$(".shangyi img").click(function(){
+	  			$(".shangyi li").stop()
+	  		$(".shangyi li").slideToggle(1000)
+	  	})
+	  		$(".kuzi img").click(function(){
+	  			$(".kuzi li").stop()
+	  		$(".kuzi li").slideToggle(1000)
+	  	})
+	  			$(".xz img").click(function(){
+	  				$(".xz li").stop()
+	  		$(".xz li").slideToggle(1000)
+	  	})
+	  $(".middle_bottom1_left_middle ul ul img").click(function(){
+	  	$(this).parent().find("li").stop()
+	  	$(this).parent().find("li").slideToggle()
+	  	$(this).parent().siblings().find("li").hide()
+	  })
+	  $(".middle_bottom_bottom img").click(function(){
+	  	$(".left2").toggle(1000)
+	  })
+	  // $(".middle_bottom1_middle_top").scroll(
+	  // 	if(window.event==900))
 }

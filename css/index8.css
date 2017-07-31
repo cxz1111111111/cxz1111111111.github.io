@@ -229,21 +229,43 @@ vertical-align:middle;
 	float:left;
 	margin-top:5px;
 }
-.middle_top1>ul>li{
+.middle_top1>ul>ul{
 	float:left;
 	font-size:14px;
 	color:#ffffff;
 	width:100px;
 	border-right:1px solid #5c5c5c;
 	text-align:center;
+	cursor:pointer;
 }
-.middle_top1>ul>li:nth-child(2){
+.middle_top1>ul>ul:nth-child(2){
 	width:120px;
 	border-right:1px solid #5c5c5c;
 	text-align:center;
 }
-.middle_top1>ul>li img{
+.middle_top1>ul>ul img{
 	vertical-align:middle;
+}
+.shangping,.waitao,.shangyi,.kuzi,.xz{
+	position:relative;
+}
+.shangping>li{
+	height:20px;
+	width:120px;
+	background-color:#404040;
+	color:#ffffff;
+	float:left;
+	border-bottom:1px solid #5c5c5c;
+	display:none;
+}
+.waitao>li,.shangyi>li,.kuzi>li,.xz>li{
+	width:100px;
+	background-color:#404040;
+	color:#ffffff;
+	float:left;
+	border-bottom:1px solid #5c5c5c;
+	height:20px;
+		display:none;
 }
 .middle_middle{
 	width:100%;
@@ -661,7 +683,7 @@ vertical-align:middle;
 }
 .middle_bottom1_left_middle{
 	width:100%;
-	height:470px;
+
 	border:1px solid #efefef;
 	float:left;
 	margin-top:20px;
@@ -679,20 +701,27 @@ vertical-align:middle;
 .middle_bottom1_left_middle>ul{
 	margin-top:60px;
 }
-.middle_bottom1_left_middle>ul>li{
+.middle_bottom1_left_middle>ul>ul{
 	font-size:12px;
 	line-height:30px;
 	text-indent:2em;
 	float:left;
 	width:200px;
+	position:relative;
 
 }
-.middle_bottom1_left_middle>ul>li>img{
+.middle_bottom1_left_middle>ul>ul>li{
+	margin-left:80px;
+	display:none;
+	
+	
+}
+.middle_bottom1_left_middle>ul>ul>img{
 	vertical-align:middle;
 }
 .middle_bottom1_left_bottom{
 	width:100%;
-	height:1000px;
+
 	float:left;
 
 	margin-top:30px;
@@ -711,7 +740,7 @@ vertical-align:middle;
 
 .leftphoto{
 	width:160px;
-	height:900px;
+	
 
 	margin:0 auto;
 	
@@ -976,18 +1005,15 @@ margin-top:50px;
 	text-align:center;
 	font-size:12px
 }
-#tap2{
-	height:30px;
-	width:180px ;
-	margin-top:16px;}
-#tap3{
-	height:30px;
-	width:91px;
-	border:0;
-	background-color:#ff5367;
-	color:#ffffff;
-	line-height:30px;
-	text-align:center;
-	float:right;
+.ewm{
+	width:150px;
+	height:150px;
+	display:none;
+	line-height:150px;
 }
-.aaaaa{color:#ff5367;}
+.ewm img{
+	width:100px;
+	height:100px;
+	margin-top:15px;
+}
+.left2{display:none;}
