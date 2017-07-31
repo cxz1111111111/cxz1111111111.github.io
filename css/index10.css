@@ -143,8 +143,15 @@ body{
 	height:194px;
 }
 .over{
-	width:660px;
+	width:600px;
 	height:280px;
 	position:relative;
 	left:280px;top:70px;
+	overflow:hidden;
+}
+.mum{
+	height:280px;
+	width:1980px;
+	position:absolute;
+	
 }

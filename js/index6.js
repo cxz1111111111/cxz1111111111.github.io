@@ -30,11 +30,21 @@ window.onload=function(){
 		$(".newaddress").hide(1000)
 		var div=document.createElement("div");
 		div.className="bottom_topbody11";
-		
 		div.innerHTML=bottom_topbody11.innerHTML
-
-	
+		div.getElementsByTagName("p")[0].getElementsByTagName("span")[0].innerHTML="姓名 : "+$(".addname input").eq(0).val()
+		div.getElementsByTagName("p")[1].getElementsByTagName("span")[0].innerHTML="详细地址 : "+$(".addres input").eq(0).val()
+		div.getElementsByTagName("p")[2].getElementsByTagName("span")[0].innerHTML="市区街道 : "+$(".shi input").eq(0).val()
+		div.getElementsByTagName("p")[3].getElementsByTagName("span")[0].innerHTML="联系方式 : "+$(".phone input").eq(0).val()
 		$(".news").append(div)
-
+		$(this).prev().children().val("");
+		$(this).prev().prev().children().val("");
+		$(this).prev().prev().prev().children().val("");
+		$(this).prev().prev().prev().prev().children().val("");
 			})
+	$("a[name='shouye']").click(function(){
+		window.location.href="index.html"
+	})
+	$("a[name='list']").click(function(){
+		window.location.href="list.html"
+	})
 }

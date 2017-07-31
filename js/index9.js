@@ -14,12 +14,25 @@ window.onload=function(){
 		$(".wxzfbottom").hide()
 		$(".zfbbottom").hide()
 	})
-	
+	$(".zfbbottom img").click(function(){
+		alert("确认支付?")
+		window.location.href="paysuccess.html"
+	})
+	$(".wxzfbottom img").click(function(){
+		alert("确认支付?")
+		window.location.href="paysuccess.html"
+	})
+	$(".ylzfbottom img").click(function(){
+		alert("确认支付?")
+		window.location.href="paysuccess.html"
+	})
+
 	function sp(){
-		var pass=new Date();	
+		var pass=new Date(2017,10,31,23)-new Date()
+		
 		var hours=parseInt(pass/1000/60/60%24,10);
-		var minutes=parseInt(pass/1000/60%60-24*60%60,10)
-		var seconds=parseInt(pass/1000%60-24*60*60%60,10);
+		var minutes=parseInt(pass/1000/60%60,10)
+		var seconds=parseInt(pass/1000%60,10);
 		var da=hours+"时"+minutes+"分"+seconds+"秒"
 		
 		$("span[name='dat']").html(da)

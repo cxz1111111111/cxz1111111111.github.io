@@ -73,5 +73,10 @@ window.onload=function(){
 	 $("a[name='page']").click(function(){
 	 	window.location.href="index.html";
 	 })
-	
+	$("a[name='gwc']").click(function(){
+		window.location.href="shoppingcart.html"
+	})
+	$("a[name='dingdang']").click(function(){
+		window.location.href="firmorder.html"
+	})
 }

@@ -26,6 +26,7 @@ window.onload=function(){
 	put3.onclick=function(){
 		window.location.href="personal.html"
 	}
+
 	var zhuce=document.getElementById("zhuce");
 	var header_right1=document.getElementsByClassName("header_right1")[0];
 	var tap=document.getElementsByClassName("tap")[0];
@@ -57,7 +58,9 @@ window.onload=function(){
 			var sb=setInterval(move,1000);
 		}	
 	}
-	
+	$(".header_right21_input").click(function(){
+		window.location.href="index8.html"
+	})
 	if(window.localStorage.demo=='注册'){
     	$(".header_right1").hide();
     	$(".tap").show()
@@ -68,9 +71,7 @@ window.onload=function(){
     	$(".tap").hide()
     }
     $("#put3").click(function(){
-    	window.localStorage.gg=$("#put3").val();
-    	window.localStorage.sb=$("#put1").val();
-    	window.localStorage.sb1=$("#put2").val();
+    	window.location.href="personal.html"
 
 
     })

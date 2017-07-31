@@ -1,20 +1,21 @@
 window.onload=function(){
-	// var arr=[
-	// 	{src:"img/paidcloth3.png"},
-	// 	{src:"img/paidcloth1.png"},
-	// 	{src:"img/paidcloth2.png"},
-	// 	{src:"img/paidcloth3.png"},
-	// 	{src:"img/paidcloth1.png"},
-	// 	{src:"img/paidcloth2.png"},
-	// 	{src:"img/paidcloth1.png"},
-	// 	{src:"img/paidcloth1.png"},
-	// 	{src:"img/paidcloth1.png"},
-
-	// ]
-
+	var lefts=$(".over").width();	
+	var n=0	
 	$("span[name='over']").click(function(){
-		$(".overimg").attr("src","img/paidcloth3.png")
-		$(".overimg3").attr("src","img/paidcloth2.png")
-		$(".overimg2").attr("src","img/paidcloth1.png")
+	if(n<2){
+		n++
+		
+	
+		$(".mum").animate(
+
+			{left:-lefts*n}
+		
+		)}
+	else{
+			$(".mum").animate({left:0})
+			n=0
+		
+		}
+		
 	})
 }

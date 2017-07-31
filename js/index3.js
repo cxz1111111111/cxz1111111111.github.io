@@ -134,7 +134,11 @@ window.onload=function(){
 	$("input[name='lastbutton']").eq(0).click(function(){
 		window.location.href="firmorder.html"
 	})
-
-
+	$("a[name='shouye']").click(function(){
+		window.location.href="index.html"
+	})
+	$("a[name='lie']").click(function(){
+		window.location.href="list.html"
+	})
 
 }
