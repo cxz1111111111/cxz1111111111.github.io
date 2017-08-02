@@ -1017,3 +1017,8 @@ margin-top:50px;
 	margin-top:15px;
 }
 .left2{display:none;}
+.middle_bottom1_right{
+	background-color:#f6f6f6;
+	position:fixed;
+	top:100px;right:20px;
+}
