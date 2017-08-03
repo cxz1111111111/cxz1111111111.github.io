@@ -8,6 +8,19 @@ body{
 	font-family:"微软雅黑";
 }
 ul,ol{list-style:none;}
+.person{
+	position:fixed;
+	right:0;
+	background:#ffffff;
+	height:100px;
+	width:200px;
+	line-height:50px;
+	text-align:center;
+	font-size:12px;
+	
+
+
+}
 .header_1 ul li>a{
 	text-decoration:none;
 	color:#000000;

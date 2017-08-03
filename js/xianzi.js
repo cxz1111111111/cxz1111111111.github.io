@@ -1,0 +1,26 @@
+window.onload=function(){
+$("a[name='mudangjie']").click(function(){
+	window.location.href="index.html"
+})
+$("a[name='womanindex']").click(function(){
+	window.location.href="womanindex.html"
+})
+$("a[name='womanindex2']").click(function(){
+	window.location.href="womanindex2.html"
+})
+$("a[name='womanindex3']").click(function(){
+	window.location.href="womanindex3.html"
+})
+$("a[name='womanindex4']").click(function(){
+	window.location.href="womanindex4.html"
+})
+$("a[name='womanindex5']").click(function(){
+	window.location.href="womanindex5.html"
+})
+$("a[name='womanindex6']").click(function(){
+	window.location.href="womanindex6.html"
+})
+$("a[name='womanindex7']").click(function(){
+	window.location.href="womanindex7.html"
+})
+}

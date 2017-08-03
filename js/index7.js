@@ -121,4 +121,10 @@ window.onload=function(){
 	$("a[name='dingdang']").click(function(){
 			window.location.href="firmorder.html";
 		})
+	$(".person span").click(function(){
+		$(this).parent().css("display","none")
+	})
+	$("a[name='xianzi']").click(function(){
+		window.location.href="xianzi.html"
+	})
 }

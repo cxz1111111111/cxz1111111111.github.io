@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:underline;
+	color:black;
+}
+a:hover{color:red;}
+.zt{
+	width:100%;
+}
+.body{
+	width:1200px;
+	margin:0 auto;
+	
+	border:10px solid black;
+}
+p{margin:10px;}
+.body>p>img{
+	width:100px;
+
+}
+.red{vertical-align:top;}
+.zhu{margin-left:10px;
+	color:red;
+}
