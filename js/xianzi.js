@@ -23,4 +23,50 @@ $("a[name='womanindex6']").click(function(){
 $("a[name='womanindex7']").click(function(){
 	window.location.href="womanindex7.html"
 })
+
+$("a[name='leke1']").click(function(){
+	window.location.href="lekeindex1.html"
+})
+$("a[name='leke2']").click(function(){
+	window.location.href="lekeindex2.html"
+})
+$("a[name='leke3']").click(function(){
+	window.location.href="lekeindex3.html"
+})
+$("a[name='leke4']").click(function(){
+	window.location.href="lekeindex4.html"
+})
+$("a[name='leke5']").click(function(){
+	window.location.href="lekeindex5.html"
+})
+$("a[name='leke6']").click(function(){
+	window.location.href="lekeindex6.html"
+})
+$("a[name='leke7']").click(function(){
+	window.location.href="lekeindex7.html"
+})
+$("a[name='leke8']").click(function(){
+	window.location.href="lekeindex8.html"
+})
+$("a[name='leke9']").click(function(){
+	window.location.href="lekeindex9.html"
+})
+$("a[name='leke10']").click(function(){
+	window.location.href="lekeindex10.html"
+})
+$("a[name='leke11']").click(function(){
+	window.location.href="lekeindex11.html"
+})
+$("a[name='leke12']").click(function(){
+	window.location.href="lekeindex12.html"
+})
+$("a[name='leke13']").click(function(){
+	window.location.href="lekeindex13.html"
+})
+$("a[name='leke14']").click(function(){
+	window.location.href="lekeindex14.html"
+})
+$("a[name='leke15']").click(function(){
+	window.location.href="lekeindex15.html"
+})
 }
