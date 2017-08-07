@@ -76,6 +76,7 @@ a{text-decoration:none;
 	font-size:12px;
 	color:#767573;
 	margin-right:40px;
+	cursor:pointer
 }
 .header_right2{
 	height:200px;
@@ -103,6 +104,7 @@ a{text-decoration:none;
 	background-color:#ff5367;
 	border:0;
 	color:#fefefe;
+	cursor:pointer;
 }
 .header_right21bottom{
 	height:47px;

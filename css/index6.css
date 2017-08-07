@@ -7,6 +7,7 @@ ol,ul{list-style:none;}
 a{
 	text-decoration:none;
 	color:#000000;
+	cursor:pointer;
 }
 a:hover{
 	color:red;
@@ -184,6 +185,7 @@ a:hover{
 }
 .bottom_topbodytwop span{
 	margin-left:20px;
+	cursor:pointer;
 }
 .bottom_topbody1>b{
 
